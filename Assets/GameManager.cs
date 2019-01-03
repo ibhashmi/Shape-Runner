@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;      //used for switching or reloading scenes
 public class GameManager : MonoBehaviour
 {
     private bool gameEnded = false;
+    public float delayTime = 2f;    //set delay time to 2 seconds
 
     public void GameOver()  //needs to be accessed in PlayerCollision
     {
@@ -12,7 +13,7 @@ public class GameManager : MonoBehaviour
         {
             gameEnded = true;
             Debug.Log("GAME OVER!");
-            RestartGame();
+            Invoke("RestartGame", delayTime);
             
         }
         
@@ -20,6 +21,9 @@ public class GameManager : MonoBehaviour
     
     private void RestartGame()
     {
-
+        /* inside brackets: gets current scene name
+        * outside brackets: loads scene by name (parameter)
+        */
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);    
     }
 }
