@@ -11,6 +11,8 @@ public class ShapeCollision : MonoBehaviour
         {
             Debug.Log("We hit an " + collisionInfo.collider.name + "!");
             movement.enabled = false;
+            FindObjectOfType<GameManager>().GameOver();
+
         }
         
     }
