@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     private bool gameEnded = false;
     public float delayTime = 2f;    //set delay time to 2 seconds
+    public GameObject levelCompleteUI;  //reference to end level panel
 
     public void GameOver()  //needs to be accessed in PlayerCollision
     {
@@ -19,6 +20,12 @@ public class GameManager : MonoBehaviour
         
     }
     
+    
+    public void LevelComplete()
+    {
+        levelCompleteUI.SetActive(true);    //enable UI
+    }
+
     private void RestartGame()
     {
         /* inside brackets: gets current scene name
