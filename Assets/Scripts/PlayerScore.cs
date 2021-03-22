@@ -3,7 +3,7 @@ using UnityEngine.UI;   //allows to write code for UI
 
 public class PlayerScore : MonoBehaviour
 {
-    public Transform player;    //Transform deals with positions and rotations
+    public Transform player;    //"Transform" deals with positions and rotations
     public Text score;
 
     // Update is called once per frame
