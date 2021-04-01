@@ -1,5 +1,7 @@
+<p a;ign = "center">
 # Shape-Runner
 A shaped-themed 3D running game made using the Unity Game Engine. 
+
 
 ## How the game works
 The user plays as a red ball and uses the A and D keys to move left and right to avoid incoming obstacles. If an obstacle is hit, the game restarts from the beginning and the score resets. The longer the player survives without hitting an obstacle, the faster their ball moves on the platform. 
@@ -10,7 +12,7 @@ The user plays as a red ball and uses the A and D keys to move left and right to
 
 https://user-images.githubusercontent.com/43527512/113240165-2d621480-927a-11eb-9e93-39c7dee638e5.mp4
 
-
+</p>
 
 
 
