@@ -1,4 +1,4 @@
-# Shape-Runner
+# Shape-Runner 🎮 
 A shaped-themed 3D running game made using the Unity Game Engine. 
 
 
